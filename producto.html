@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Online</title>
+  <link rel="stylesheet" href="producto.css">
+</head>
+<body>
+  <header>
+    <h1>Tienda Online</h1>
+  </header>
+  <a href="carrito.html">Carrito</a>
+  
+  <main>
+    <!-- Productos -->
+    <section id="products">
+      <div class="product" data-id="1" data-name="Producto 1" data-price="10">
+        <h2>Producto 1</h2>
+        <p>Precio: $10</p>
+         <a href="./index.html"><img src="./img/cel.jpg" alt="Logo" id="logo"></a>
+        <button class="add-to-cart">Añadir al carrito</button>
+      </div>
+      <div class="product" data-id="2" data-name="Producto 2" data-price="15">
+        <h2>Producto 2</h2>
+        <p>Precio: $15</p>
+         <a href="./index.html"><img src="./img/micel.jpg" alt="Logo" id="logo"></a>
+        <button class="add-to-cart">Añadir al carrito</button>
+      </div>
+      <div class="product" data-id="3" data-name="Producto 3" data-price="35">
+        <h2>Producto 3</h2>
+        <p>Precio: $35</p>
+        <a href="./index.html"><img src="./img/celular.jpg" alt="Logo" id="logo"></a>
+        <button class="add-to-cart">Añadir al carrito</button>
+      </div>
+    </section>
+    
+    <!-- Carrito -->
+    <section id="cart">
+      <h2>Carrito de Compras</h2>
+      <ul id="cart-items"></ul>
+      <p id="total">Total: $0</p>
+      <form id="payment-form">
+        <label for="payment-file">Subir archivo de pago:</label>
+        <input type="file" id="payment-file" name="payment-file" accept=".jpg,.png,.pdf">
+        <button type="submit">Finalizar Compra</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="producto.js"></script>
+  <script src="carrito.js"></script>
+</body>
+</html>
